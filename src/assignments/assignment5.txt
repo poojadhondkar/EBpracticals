@@ -1,0 +1,25 @@
+1.Encapsulation facilitates a single function name to be used for the
+   same operation performed on related derived classes.
+ANS:-false
+
+2.In polymorphism even though the function names are same, their
+implementation may vary from class to class.
+ANS:-True
+
+3.Multiple objects can be created from the same class.
+ANS:-true
+
+4.Object-oriented Programming paradigm stresses on dividing the
+logic into smaller parts and writing procedures for each part.
+ANS:-false
+
+5.Classes and objects are cornerstones of structured programming
+paradigm.
+ANS:-false
+
+6.Object-oriented programming paradigm gives equal importance to
+data and the procedures that work on the data.
+ANS:-True
+
+7.Java is a structured programming language.
+ANS:-false
