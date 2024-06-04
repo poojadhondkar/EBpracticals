@@ -1,0 +1,36 @@
+a) When the following code snippet is executed would contents of s1
+and s2 be same or different?
+// Sample is a user-defined class
+Sample s1, s2 ;
+s1 = new Sample( ) ;
+s2 = new Sample( ) ;
+ANS:-Two separate instances of the Sample class are created using the new keyword, one assigned to s1 and the other assigned to s2. Each   instance of Sample is independent of the other, and they occupy different memory locations.
+
+b) When the following code snippet is executed where would the
+   object and the reference be created in memory?
+   Sample c ;
+c = new Sample( ) ;
+ANS:-The reference variable c is created on the stack, which holds the memory address of the object.
+
+(c) Is it true that objects are always nameless and depending upon
+    their size they either get created in the stack or on the heap?
+ANS:- Objects themselves are nameless in the sense that they don't have their own identifier like variables do. However, they are          associated with a reference variable that allows access to them. When an object is created using the new keyword in Java, memory is   allocated for that object. This memory allocation occurs in the heap.
+
+(d) What is Garbage Collector? How is it important when working with
+    classes and objects in Java?
+ANS:-Garbage Collector (GC) is an automatic memory management system in Java that manages the allocation and deallocation of memory for Java objects. Its primary purpose is to reclaim memory occupied by objects that are no longer in use, thus preventing memory leaks and ensuring efficient memory usage.
+
+(e) How many times can a constructor be called during lifetime of the
+    object?
+ANS:-In Java, a constructor can be called only once during the lifetime of an object. When an object is created using the new keyword, the constructor associated with that class is invoked to initialize the object. Once the constructor has been executed and the object has been initialized, it cannot be called again to reinitialize the object.
+
+(f) Is it possible for you to prevent an object from being created by
+using zero-argument constructor? If yes, how?
+ANS:-es, it's possible to prevent the creation of objects using a zero-argument constructor by making the constructor private. By doing so, you restrict the visibility of the constructor to only the members of the class itself, preventing external code from instantiating objects of that class using the default constructor.
+
+(g) Constructor cannot return any value. If constructor fails, how do
+you let the caller know?
+ANS:-Constructors in Java cannot return values, but they can throw exceptions to indicate failure during object creation. When a constructor encounters an exceptional situation, it can throw an exception, which can then be caught and handled by the caller.
+
+(h) Is it possible to call constructor for a class explicitly?
+ANS:-No, it is not possible to call a constructor explicitly in Java. Constructors are automatically called when an object is created using the new keyword. The Java language specification does not provide a mechanism to call constructors directly from within other methods or constructors.
